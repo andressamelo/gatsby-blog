@@ -7,12 +7,12 @@ import * as S from "./styled"
 const PostItem = ({ slug, background, category, date, timeToRead, title, description }) => (
     <S.PostItemLink cover direction="right" bg={getThemeColor()} duration={0.6} to={slug}>
         <S.PostItemWrapper>
-            <S.PostItemTag background={background}>{category}</S.PostItemTag>
             <S.PostItemInfo>
-                <S.PostItemDate>{date} - {timeToRead}min de leitura</S.PostItemDate>
+                <S.PostItemTag background={background}>{category}</S.PostItemTag>
                 <S.PostItemTitle>
                     {title}
                 </S.PostItemTitle>
+                <S.PostItemDate>{date} - {timeToRead}min de leitura</S.PostItemDate>
                 <S.PostItemDescription>
                     {description}
                 </S.PostItemDescription>

@@ -1,20 +1,19 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Avatar from "../Avatar"
-import getThemeColor from "../../utils/getThemeColor.js"
+import SocialLinks from "../SocialLinks"
 
 import * as S from "./styled"
 
 const Profile = () => {
     const {
         site: { 
-            siteMetadata: { title, description, author },
+            siteMetadata: { description, author },
         },
     } = useStaticQuery(graphql`
         query MySiteMetadata {
             site {
                 siteMetadata {
-                    title
                     description
                     author
                 }
@@ -24,14 +23,15 @@ const Profile = () => {
 
     return (
         <S.ProfileWrapper>
-            <S.ProfileLink to="/" cover direction="left" bg={getThemeColor()} duration={0.6}>
+            <S.ProfilePhoto>
                 <Avatar />
-                <S.ProfileAuthor>
-                    {author}
-                    <S.ProfileTitle>{title}</S.ProfileTitle>
-                </S.ProfileAuthor>
-            </S.ProfileLink>
-            <S.ProfileDescription>{description}</S.ProfileDescription>
+            </S.ProfilePhoto>
+
+            <S.ProfileColumn>
+                <S.ProfileAuthor>{author}</S.ProfileAuthor>
+                <S.ProfileDescription>{description}</S.ProfileDescription>
+                <SocialLinks />                
+            </S.ProfileColumn>
         </S.ProfileWrapper>
     )
 }

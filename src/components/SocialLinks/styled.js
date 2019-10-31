@@ -2,7 +2,6 @@ import styled from "styled-components"
 import media from "styled-media-query"
 
 export const SocialLinksWrapper = styled.nav`
-  margin: 2rem auto;
   width: 100%;
   ${media.lessThan("large")`
     display: none;
@@ -10,13 +9,13 @@ export const SocialLinksWrapper = styled.nav`
 `
 
 export const SocialLinksList = styled.ul`
-  align-items: center;
   display: flex;
-  justify-content: space-around;
   list-style: none;
 `
 
-export const SocialLinksItem = styled.li``
+export const SocialLinksItem = styled.li`
+  padding: 0.5rem;
+`
 
 export const SocialLinksLink = styled.a`
   color: var(--texts);

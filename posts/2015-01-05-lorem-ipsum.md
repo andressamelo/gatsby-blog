@@ -1,7 +1,7 @@
 ---
 date: 2015-01-05 05:54:23
-title: Lorem lorem ipsum
-description: And I'm lorem sure lorem
+title: Proin ornare ligula eu tellus tempus elementum.
+description: Proin suscipit luctus orci placerat fringilla. Donec hendrerit laoreet risus eget adipiscing.
 category: JS
 background: "#7AAB13"
 ---

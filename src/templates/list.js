@@ -4,6 +4,7 @@ import { graphql } from "gatsby"
 import Layout from "../components/Layout"
 import SEO from "../components/seo"
 import PostItem from "../components/PostItem"
+import Profile from "../components/Profile"
 import Pagination from "../components/Pagination"
 import * as S from "../components/ListWrapper/styled"
 
@@ -19,6 +20,7 @@ const BlogList = props => {
     return (
         <Layout>
             <SEO title="Home" />
+            <Profile />
             <S.ListWrapper>
               {postList.map(
                   ({
