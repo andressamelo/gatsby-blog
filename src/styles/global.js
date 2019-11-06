@@ -55,10 +55,15 @@ const GlobalStyles = createGlobalStyle`
     background: #16202c;
     line-height: 1;
     font-size: 100%;
-    font-family: 'Montserrat', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: 'Raleway', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
-  h1 {
-    font-family: 'Libre Baskerville', serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-family: 'Raleway', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   }
   img {
     display: block;
@@ -79,7 +84,7 @@ const GlobalStyles = createGlobalStyle`
   }
   body.light {
     --borders: #dedede;
-    --postColor: #111;
+    --postColor: #414141;
     --texts: #555555;
     --highlight: #e6c800;
     --mediumBackground: #f0f0f3;

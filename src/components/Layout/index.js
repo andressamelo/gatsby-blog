@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import MenuBar from "../MenuBar"
+import Navbar from "../Navbar"
 import { TransitionPortal } from "gatsby-plugin-transition-link";
 
 import * as S from "./styled"
@@ -15,7 +15,7 @@ const Layout = ({ children }) => {
         <S.LayoutMain>{children}</S.LayoutMain>
 
         <TransitionPortal level="top">
-          <MenuBar />
+          <Navbar />
         </TransitionPortal>
     </S.LayoutWrapper>
   )

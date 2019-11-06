@@ -1,4 +1,5 @@
 import React, {useState, useEffect } from "react"
+import { useStaticQuery, graphql } from "gatsby"
 
 import { Home } from "styled-icons/feather/Home"
 import { Search } from "styled-icons/feather/Search"
@@ -17,6 +18,20 @@ const MenuBar = () => {
     const isDarkMode = theme === "dark"
     const isListMode = display === "list"
 
+    const {
+        site: { 
+            siteMetadata: { title },
+        },
+    } = useStaticQuery(graphql`
+        query titleSite {
+            site {
+                siteMetadata {
+                    title
+                }
+            }
+        }
+    `)
+
     useEffect(() => {
         setTheme(window.__theme)
         setDisplay(window.__display)
@@ -28,13 +43,16 @@ const MenuBar = () => {
         <S.MenuBarWrapper>
             <S.MenuBarGroup>
                 <S.MenuBarLink cover direction="right" bg={getThemeColor()} duration={0.6} to="/" title="Voltar para a Home">
-                    <S.MenuBarItem><Home /></S.MenuBarItem>
-                </S.MenuBarLink>
-                <S.MenuBarLink cover direction="right" bg={getThemeColor()} duration={0.6} to="/search/" title="Pesquisar">
-                    <S.MenuBarItem><Search /></S.MenuBarItem>
+                    <S.MenuName>
+                        {/* <Home /> */}
+                        {title}
+                    </S.MenuName>
                 </S.MenuBarLink>
             </S.MenuBarGroup>
             <S.MenuBarGroup>
+                <S.MenuBarLink cover direction="right" bg={getThemeColor()} duration={0.6} to="/search/" title="Pesquisar">
+                    <S.MenuBarItem><Search /></S.MenuBarItem>
+                </S.MenuBarLink>
                 <S.MenuBarItem title="Mudar o tema" onClick={() => {
                     window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
                 }} className={theme} >

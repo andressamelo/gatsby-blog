@@ -7,19 +7,19 @@ export const ProfileWrapper = styled.section`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 0 5rem;
+  padding: 5rem 5rem 5rem 5rem;
   width: 100%;
+  border-bottom: 1px solid #dedede;
   
   ${media.lessThan("large")`
     text-align: left;
   `}
 `
-
 export const ProfileColumn = styled.div`
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 3;
+  flex: 4;
 `
 export const ProfilePhoto = styled.div`
   display: flex;
@@ -27,22 +27,21 @@ export const ProfilePhoto = styled.div`
   flex-basis: 100%;
   flex: 1;
 `
-
 export const ProfileAuthor = styled.h1`
-  font-size: 1.6rem;
+  font-size: 3.4rem;
   margin: 0.5rem 0;
-  font-weight: 500;
-  
+  font-weight: 700;
+  color: var(--postColor);
+
   ${media.lessThan("large")`
     font-size: 1.2rem;
     margin: 0 0 0 10px;
   `}
 `
-
 export const ProfileDescription = styled.p`
-  font-size: 1rem;
-  font-weight: 300;
-  line-height: 1.4;
+  font-size: 1.3rem;
+  font-weight: 400;
+  line-height: 1.5;
 
   ${media.lessThan("large")`
     display: none;

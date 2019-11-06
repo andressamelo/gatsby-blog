@@ -23,9 +23,9 @@ const Profile = () => {
 
     return (
         <S.ProfileWrapper>
-            <S.ProfilePhoto>
+            {/* <S.ProfilePhoto>
                 <Avatar />
-            </S.ProfilePhoto>
+            </S.ProfilePhoto> */}
 
             <S.ProfileColumn>
                 <S.ProfileAuthor>{author}</S.ProfileAuthor>

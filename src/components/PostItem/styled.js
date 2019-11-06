@@ -48,7 +48,7 @@ export const PostItemDate = styled.time`
 `
 
 export const PostItemTitle = styled.h1`
-  font-size: 2.4rem;
+  font-size: 2.6rem;
   font-weight: 600;
   line-height: 42px;
   color: var(--postColor);
