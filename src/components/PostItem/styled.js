@@ -44,6 +44,7 @@ export const PostItemTag = styled.div`
 export const PostItemInfo = styled.div`
   display: flex;
   flex-direction: column;
+  width: 100%;
 `
 
 export const PostItemDate = styled.time`

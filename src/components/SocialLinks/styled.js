@@ -3,19 +3,24 @@ import media from "styled-media-query"
 
 export const SocialLinksWrapper = styled.nav`
   width: 100%;
-  ${media.lessThan("large")`
-    display: none;
-  `}
 `
 export const SocialTitle = styled.span`
   font-size: 1.1rem;
   font-weight: 400;
   line-height: 3;
+
+  ${media.lessThan("large")`
+    display: none;
+  `}
 `
 
 export const SocialLinksList = styled.ul`
   display: block ruby;
   list-style: none;
+
+  ${media.lessThan("large")`
+    margin-top: 1rem;
+  `}
 `
 
 export const SocialLinksItem = styled.li`
