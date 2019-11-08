@@ -2,11 +2,11 @@ import styled from "styled-components"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const MenuBarWrapper = styled.aside`
-  align-items: flex-end;
+  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 0.2rem 3rem;
+  padding: 0.2rem 10rem;
   width: 100vw;
 `
 
@@ -21,13 +21,13 @@ export const MenuBarLink = styled(AniLink)`
 `
 
 export const MenuBarItem = styled.span`
-  color: var(--texts);
+  color: var(--postColor);
   cursor: pointer;
   display: block;
-  height: 3.75rem;
-  padding: 1.1rem;
+  height: 2.8rem;
+  padding: 0.8rem;
   position: relative;
-  width: 3.75rem;
+  width: 2.8rem;
 
   &.light {
     color: #d4d400;
@@ -48,14 +48,11 @@ export const MenuName = styled(AniLink)`
   &:focus, &:hover, &:visited, &:link, &:active {
       text-decoration: none;
   }
-  color: var(--white);
+  color: var(--postColor);
   cursor: pointer;
   display: block;
-  height: 3.75rem;
-  padding: 1.1rem;
   position: relative;
-  font-size: 1.4rem;
-  font-weight: 500;
-  // text-transform: uppercase;
-  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  letter-spacing: 0.05rem;
 `

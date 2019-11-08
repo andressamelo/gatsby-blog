@@ -7,9 +7,10 @@ export const ProfileWrapper = styled.section`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding: 5rem 5rem 5rem 5rem;
+  padding: 5rem;
   width: 100%;
   border-bottom: 1px solid #dedede;
+  text-align: center;
   
   ${media.lessThan("large")`
     text-align: left;
@@ -25,7 +26,7 @@ export const ProfilePhoto = styled.div`
   display: flex;
   flex-direction: column;
   flex-basis: 100%;
-  flex: 1;
+  flex: 3;
 `
 export const ProfileAuthor = styled.h1`
   font-size: 3.4rem;

@@ -4,8 +4,8 @@ import Img from "gatsby-image"
 
 export const AvatarWrapper = styled(Img)`
     border-radius: 50%;
-    height: 4rem;
-    width: 4rem;
+    height: 7rem;
+    width: 7rem;
     margin: 1rem auto;
 
     ${media.lessThan("large")`

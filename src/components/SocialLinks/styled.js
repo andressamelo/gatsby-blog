@@ -9,7 +9,7 @@ export const SocialLinksWrapper = styled.nav`
 `
 
 export const SocialLinksList = styled.ul`
-  display: flex;
+  display: block ruby;
   list-style: none;
 `
 

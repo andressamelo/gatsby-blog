@@ -8,13 +8,19 @@ export const StyledNavbar = styled.div`
   height: 4rem;
   display: flex;
   align-items: center;
-  background: var(--black);
   z-index: 1000;
 `
 export const Transition = styled.div`
   .active {
     visibility: visible;
     transition: all 200ms ease-in;
+    background: var(--solidBackground);
+  }
+  .test {
+    border: 1px solid red;
+  }
+  .testtest {
+    border: 2px solid black;
   }
   .hidden {
     visibility: hidden;

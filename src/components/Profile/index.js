@@ -8,14 +8,14 @@ import * as S from "./styled"
 const Profile = () => {
     const {
         site: { 
-            siteMetadata: { description, author },
+            siteMetadata: { description, title },
         },
     } = useStaticQuery(graphql`
         query MySiteMetadata {
             site {
                 siteMetadata {
                     description
-                    author
+                    title
                 }
             }
         }
@@ -23,12 +23,11 @@ const Profile = () => {
 
     return (
         <S.ProfileWrapper>
-            {/* <S.ProfilePhoto>
-                <Avatar />
-            </S.ProfilePhoto> */}
-
             <S.ProfileColumn>
-                <S.ProfileAuthor>{author}</S.ProfileAuthor>
+                <S.ProfilePhoto>
+                    <Avatar />
+                </S.ProfilePhoto>
+                <S.ProfileAuthor>{title}</S.ProfileAuthor>
                 <S.ProfileDescription>{description}</S.ProfileDescription>
                 <SocialLinks />                
             </S.ProfileColumn>

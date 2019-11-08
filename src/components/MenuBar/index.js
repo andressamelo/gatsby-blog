@@ -1,12 +1,10 @@
 import React, {useState, useEffect } from "react"
 import { useStaticQuery, graphql } from "gatsby"
 
-import { Home } from "styled-icons/feather/Home"
 import { Search } from "styled-icons/feather/Search"
 import { Grid } from "styled-icons/feather/Grid"
 import { List } from "styled-icons/feather/List"
 import { LightBulb as Light } from "styled-icons/octicons/LightBulb"
-import { ArrowUp as Arrow } from "styled-icons/feather/ArrowUp"
 import getThemeColor from "../../utils/getThemeColor.js"
 
 import * as S from "./styled"
@@ -20,13 +18,13 @@ const MenuBar = () => {
 
     const {
         site: { 
-            siteMetadata: { title },
+            siteMetadata: { author },
         },
     } = useStaticQuery(graphql`
         query titleSite {
             site {
                 siteMetadata {
-                    title
+                    author
                 }
             }
         }
@@ -44,8 +42,7 @@ const MenuBar = () => {
             <S.MenuBarGroup>
                 <S.MenuBarLink cover direction="right" bg={getThemeColor()} duration={0.6} to="/" title="Voltar para a Home">
                     <S.MenuName>
-                        {/* <Home /> */}
-                        {title}
+                        {author}
                     </S.MenuName>
                 </S.MenuBarLink>
             </S.MenuBarGroup>
@@ -63,7 +60,6 @@ const MenuBar = () => {
                 }}>
                  {isListMode ? <Grid /> : <List />}
                 </S.MenuBarItem>
-                <S.MenuBarItem title="Ir para o topo"><Arrow /></S.MenuBarItem>
             </S.MenuBarGroup>
         </S.MenuBarWrapper>        
     )
