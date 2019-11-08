@@ -7,6 +7,11 @@ export const SocialLinksWrapper = styled.nav`
     display: none;
   `}
 `
+export const SocialTitle = styled.span`
+  font-size: 1.1rem;
+  font-weight: 400;
+  line-height: 3;
+`
 
 export const SocialLinksList = styled.ul`
   display: block ruby;
@@ -14,7 +19,14 @@ export const SocialLinksList = styled.ul`
 `
 
 export const SocialLinksItem = styled.li`
-  padding: 0.5rem;
+  padding: .2rem;
+
+  &:first-of-type {
+    margin-left: .5rem;
+  }
+  &:last-of-type {
+    margin-right: .5rem;
+  }
 `
 
 export const SocialLinksLink = styled.a`
@@ -28,6 +40,6 @@ export const SocialLinksLink = styled.a`
 
 export const IconWrapper = styled.div`
   fill: #bbb;
-  width: 30px;
-  height: 30px;
+  width: 24px;
+  height: 24px;
 `

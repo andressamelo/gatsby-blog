@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
+import media from "styled-media-query"
 
 export const MenuBarWrapper = styled.aside`
   align-items: center;
@@ -8,6 +9,10 @@ export const MenuBarWrapper = styled.aside`
   justify-content: space-between;
   padding: 0.2rem 10rem;
   width: 100vw;
+
+  ${media.lessThan("large")`
+    padding: 0.2rem 1rem;
+  `}
 `
 
 export const MenuBarGroup = styled.div`

@@ -13,7 +13,7 @@ export const ProfileWrapper = styled.section`
   text-align: center;
   
   ${media.lessThan("large")`
-    text-align: left;
+    padding: 2rem;
   `}
 `
 export const ProfileColumn = styled.div`
@@ -35,16 +35,11 @@ export const ProfileAuthor = styled.h1`
   color: var(--postColor);
 
   ${media.lessThan("large")`
-    font-size: 1.2rem;
-    margin: 0 0 0 10px;
+    font-size: 2rem;
   `}
 `
 export const ProfileDescription = styled.p`
   font-size: 1.3rem;
   font-weight: 400;
   line-height: 1.5;
-
-  ${media.lessThan("large")`
-    display: none;
-  `}
 `

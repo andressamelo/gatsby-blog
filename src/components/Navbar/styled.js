@@ -16,12 +16,6 @@ export const Transition = styled.div`
     transition: all 200ms ease-in;
     background: var(--solidBackground);
   }
-  .test {
-    border: 1px solid red;
-  }
-  .testtest {
-    border: 2px solid black;
-  }
   .hidden {
     visibility: hidden;
     transition: all 200ms ease-out;

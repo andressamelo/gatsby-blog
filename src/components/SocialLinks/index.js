@@ -8,6 +8,9 @@ import * as S from "./styled"
 const SocialLinks = () => (
     <S.SocialLinksWrapper>
         <S.SocialLinksList>
+            <S.SocialTitle>
+                You can find me on
+            </S.SocialTitle>
             {links.map((link, i) => {
                 const Icon = Icons[link.label]
 
@@ -21,6 +24,9 @@ const SocialLinks = () => (
                     </S.SocialLinksItem>
                 )
             })}
+            <S.SocialTitle>
+                or send me an email.
+            </S.SocialTitle>
         </S.SocialLinksList>
     </S.SocialLinksWrapper>
 

@@ -19,4 +19,8 @@ export const LayoutMain = styled.main`
       "posts"
       "pagination";
   }
+
+  ${media.lessThan("large")`
+    padding: 1rem 0 0 0;
+  `}
 `
