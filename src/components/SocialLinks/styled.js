@@ -15,7 +15,7 @@ export const SocialTitle = styled.span`
 `
 
 export const SocialLinksList = styled.ul`
-  display: block ruby;
+  display: inline-flex;
   list-style: none;
 
   ${media.lessThan("large")`
@@ -25,6 +25,7 @@ export const SocialLinksList = styled.ul`
 
 export const SocialLinksItem = styled.li`
   padding: .2rem;
+  line-height: 2.6;
 
   &:first-of-type {
     margin-left: .5rem;
