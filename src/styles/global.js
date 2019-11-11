@@ -52,7 +52,7 @@ const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
   body {
-    background: #16202c;
+    background: #242424;
     line-height: 1;
     font-size: 100%;
     font-family: 'Raleway', sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
