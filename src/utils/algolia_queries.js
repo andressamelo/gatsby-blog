@@ -1,4 +1,4 @@
-const postQuery = `{
+const postsQuery = `{
   posts: allMarkdownRemark(sort: { fields: frontmatter___date, order: DESC }){
     edges {
       node {
@@ -32,9 +32,9 @@ const settings = { attributesToSnippet: [`excerpt:20`] }
 
 const queries = [
   {
-    query: postQuery,
+    query: postsQuery,
     transformer: ({ data }) => flatten(data.posts.edges),
-    indexName: `Posts`,
+    indexName: `prod_POSTS`,
     settings,
   },
 ]
