@@ -2,14 +2,9 @@ require("dotenv").config()
 
 const queries = require("./src/utils/algolia_queries")
 
-module.exports = {
-  siteMetadata: {
-    title: `Hello!`,
-    author: `Andressa Melo`,
-    description: `My name is Andressa Melo and I'm a Front-end developer. I've been creating functional projects, agile, with semantic codification, up-to-date and clean.`,
-    siteUrl: `https://andressamelo-blog.netlify.com`,
-  },
-  plugins: [
+  const plugins = [
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     `gatsby-plugin-transition-link`,
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
@@ -32,19 +27,6 @@ module.exports = {
       options: {
         name: `posts`,
         path: `${__dirname}/posts`,
-      },
-    },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    {
-      resolve: `gatsby-plugin-algolia-search`,
-      options: {
-        appId: process.env.GATSBY_ALGOLIA_APP_ID,
-        apiKey: process.env.ALGOLIA_ADMIN_KEY,
-        indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
-        queries,
-        chunkSize: 10000,
-        enablePartialUpdates: true,
       },
     },
     {
@@ -85,5 +67,39 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     `gatsby-plugin-offline`,
     `gatsby-plugin-netlify-cms`
-  ],
+]
+
+if (process.env.CONTEXT === 'prod_POSTS') {
+  const algolia = {
+    resolve: `gatsby-plugin-algolia-search`,
+    options: {
+      appId: process.env.GATSBY_ALGOLIA_APP_ID,
+      apiKey: process.env.ALGOLIA_ADMIN_KEY,
+      // indexName: process.env.GATSBY_ALGOLIA_INDEX_NAME,
+      queries,
+      chunkSize: 10000, // default: 1000
+      enablePartialUpdates: true
+    }
+  }
+
+  const analytics = {
+    resolve: `gatsby-plugin-google-analytics`,
+    options: {
+      trackingId: process.env.GOOGLE_ANALYTICS_ID,
+      head: false
+    }
+  }
+
+  plugins.push(algolia)
+  plugins.push(analytics)
+}
+
+module.exports = {
+  siteMetadata: {
+    title: `Hello!`,
+    author: `Andressa Melo`,
+    description: `My name is Andressa Melo and I'm a Front-end developer. I've been creating functional projects, agile, with semantic codification, up-to-date and clean.`,
+    siteUrl: `https://andressamelo-blog.netlify.com`,
+  },
+  plugins
 }
