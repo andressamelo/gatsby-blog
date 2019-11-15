@@ -57,3 +57,9 @@ export const SearchWrapper = styled.section`
     display: none;
   }
 `
+
+export const AlgoliaIcon = styled.section`
+`
+
+export const Title = styled.section`
+`
