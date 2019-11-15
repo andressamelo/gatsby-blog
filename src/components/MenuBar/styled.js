@@ -9,6 +9,7 @@ export const MenuBarWrapper = styled.aside`
   justify-content: space-between;
   padding: 0.2rem 10rem;
   width: 100vw;
+  background: var(--background);
 
   ${media.lessThan("large")`
     padding: 0.2rem 1rem;

@@ -76,10 +76,9 @@ const GlobalStyles = createGlobalStyle`
     --texts: #FFF;
     --postColor: #fff;
     --highlight: #e6c800;
-    --mediumBackground: #192734;
+    --mediumBackground: #242424;
     --background: #242424;
     --white: #fff;
-    --solidBackground: rgba(0,0,0,0.1);
     --mediumGray: #bababa;
   }
   body.light {
@@ -90,7 +89,6 @@ const GlobalStyles = createGlobalStyle`
     --mediumBackground: #f0f0f3;
     --background: #fff;
     --white: #fff;
-    --solidBackground: rgba(255,255,255,0.6);
     --mediumGray: #bababa;
   }
 
