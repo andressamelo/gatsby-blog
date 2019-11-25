@@ -63,10 +63,7 @@ module.exports = {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
         trackingId: process.env.GOOGLE_ANALYTICS_ID,
-        head: true,
-        sampleRate: 5,
-        siteSpeedSampleRate: 10,
-        cookieDomain: "andressamelo.com.br",
+        head: false
       },
     },
     `gatsby-plugin-sitemap`,
