@@ -59,6 +59,16 @@ module.exports = {
         icon: `src/images/favicon.png`,
       },
     },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: process.env.GOOGLE_ANALYTICS_ID,
+        head: true,
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "andressamelo.com.br",
+      },
+    },
     `gatsby-plugin-sitemap`,
     {
       resolve: `gatsby-transformer-remark`,
