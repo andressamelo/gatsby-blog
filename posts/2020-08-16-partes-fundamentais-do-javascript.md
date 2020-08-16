@@ -20,3 +20,11 @@ Definir dados e, em seguida, manipulá-los sempre foi a base da programação. O
 
 * Variáveis ​​podem ser alteradas
 * Constantes permanecem as mesmas
+
+Onde as variáveis ​​podem ser alteradas, as constantes permanecem as mesmas. Neste artigo, discutiremos as várias maneiras de criar variáveis ​​em JavaScript.
+
+Este pode parecer um tópico simples, mas existem nuances sutis na criação de variáveis ​​em JavaScript que é importante saber.
+
+### O que são variáveis?
+
+Variáveis ​​em JavaScript são contêineres que contêm dados reutilizáveis. Eles são como xícaras cheias de coisas, e essas coisas podem ser usadas repetidamente, dependendo da maneira que escolhermos. Antes do ES2015, as variáveis ​​JavaScript eram declaradas exclusivamente usando a palavra-chave var.
