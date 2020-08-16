@@ -42,3 +42,7 @@ No código acima estamos declarando a variável x, a variável y e a variável z
 Observe que ainda não estamos atribuindo nenhum valor a essas variáveis. Estamos apenas dizendo que eles deveriam existir. Se você fosse olhar para o valor de cada variável aqui, seria indefinido.
 
 ### Declarando variáveis no ES2015
+
+ES2015 é a versão atualizada do JavaScript (ou ECMAScript). O termo conhecido e mais flexível para ES2015 é ES6.
+
+No ES2015, duas outras formas de declarar variáveis ​​foram introduzidas. Eles são let e const. Discutiremos esses tipos em partes posteriores desta lição.
