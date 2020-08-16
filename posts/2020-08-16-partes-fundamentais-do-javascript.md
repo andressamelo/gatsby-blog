@@ -138,3 +138,7 @@ console.log(age) // 25
 ```
 
 Agora vamos dar uma olhada nos outros tipos de variáveis, `let` e `const`.
+
+# Let
+
+Introduzido no ES2015 (também conhecido como ES6), o tipo de variável `let` compartilha muitas semelhanças com `var`, mas ao contrário de var tem restrições de escopo. `let` **é restrito a qualquer escopo em que seja declarado.** Sua declaração e atribuição são semelhantes a `var`. `let` foi introduzido para mitigar os problemas apresentados pelo escopo das variáveis ​​que os desenvolvedores enfrentam durante o desenvolvimento.
