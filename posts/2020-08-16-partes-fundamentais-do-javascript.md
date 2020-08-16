@@ -142,3 +142,30 @@ Agora vamos dar uma olhada nos outros tipos de variáveis, `let` e `const`.
 # Let
 
 Introduzido no ES2015 (também conhecido como ES6), o tipo de variável `let` compartilha muitas semelhanças com `var`, mas ao contrário de var tem restrições de escopo. `let` **é restrito a qualquer escopo em que seja declarado.** Sua declaração e atribuição são semelhantes a `var`. `let` foi introduzido para mitigar os problemas apresentados pelo escopo das variáveis ​​que os desenvolvedores enfrentam durante o desenvolvimento.
+
+Resumindo, `let` nos ajuda tornando mais fácil ver onde as variáveis ​​residem em nosso código.
+
+Ao declarar variáveis ​​com `let`:
+
+```js
+let x;
+let x = 5;
+```
+
+Múltiplas declarações também podem ser feitas com let:
+
+```js
+let x, y, z;
+let x = 50, y = 20, z = 3;
+```
+
+Ao contrário de `var`, quando usa-se `let`, as variáveis ​​não podem ser declaradas novamente. Tentar fazer isso gerará um erro de sintaxe: *O identificador já foi declarado.*
+
+```js
+let x = 20;
+let x = 50;
+
+console.log(x); // SyntaxError: identifier "x" has already been declared.
+```
+
+Essa modificação em var ajuda muito a fornecer um nível de organização enquanto gerencia grandes estruturas de dados, pois é mais seguro saber que sua variável não pode ser reatribuída em nenhum lugar em seu escopo.
