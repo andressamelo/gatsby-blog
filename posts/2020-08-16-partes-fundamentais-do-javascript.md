@@ -28,3 +28,15 @@ Este pode parecer um tópico simples, mas existem nuances sutis na criação de 
 ### O que são variáveis?
 
 Variáveis ​​em JavaScript são contêineres que contêm dados reutilizáveis. Eles são como xícaras cheias de coisas, e essas coisas podem ser usadas repetidamente, dependendo da maneira que escolhermos. Antes do ES2015, as variáveis ​​JavaScript eram declaradas exclusivamente usando a palavra-chave var.
+
+
+
+```js
+var x;
+var y;
+var z;
+```
+
+No código acima estamos declarando a variável x, a variável y e a variável z. 
+
+Observe que ainda não estamos atribuindo um valor a essas variáveis. Estamos apenas dizendo que eles deveriam existir. Se você fosse olhar para o valor de cada variável aqui, seria indefinido.
