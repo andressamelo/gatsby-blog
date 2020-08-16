@@ -62,7 +62,7 @@ var car;
 
 **Inicialização de variável:** geralmente ocorre quando uma variável é declarada. Aqui, a variável é atribuída a uma memória ou espaço pelo mecanismo JavaScript. Por isso, uma vez que uma variável é declarada, ela assume o valor `undefined` mesmo antes da atribuição.
 
-**Atribuição de variável:** a atribuição de variável é geralmente a etapa mais importante ao usar uma variável. Aqui, são atribuídos dados à variável que são um valor usando o operador de atribuição "=". Os valores em JavaScript usam um dos tipos de dados JavaScript padrão, que são:
+**Atribuição de variável:** a atribuição de variável é geralmente a etapa mais importante ao usar uma variável. Aqui, são atribuídos dados à variável que são um valor usando o operador "=". Os valores em JavaScript usam um dos tipos de dados JavaScript padrão, que são:
 
 1. `String`
 2. `Number`
@@ -70,3 +70,37 @@ var car;
 4. `Null`
 5. `Undefined`
 6. `Estrutura de dados (Array e Objetos)`
+
+```js
+var x         = 5;             // Number
+var name      = "Chris";       // String
+var developer = true | false;  // Boolean
+var location  = null;          // Null
+var blue;                      // undefined
+```
+
+A sintaxe para atribuição de tipos de dados pode ser vista acima, podemos usar aspas simples ou duplas para atribuir strings. Além disso, os valores booleanos são verdadeiros ou falsos.
+
+## Nomeando variáveis
+
+Precisamos seguir algumas regras para nomear variáveis em JavaScript, são elas:
+
+* Os nomes devem começar com string minúsculas.
+* Os nomes não podem conter símbolos ou começar com símbolos.
+* Os nomes não podem começar com um número.
+* Os nomes podem conter uma mistura de strings maiúsculas, strings minúsculas e números.
+
+**Exemplos de nomes de variáveis ​​são:**
+
+
+
+```js
+// VALID
+var man;     
+var woman3;  
+var blackDog; // This is the best way to name variables with several words
+
+// INVALID
+var 1girl;   
+var -girl;   
+```
