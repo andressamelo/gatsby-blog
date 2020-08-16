@@ -104,3 +104,9 @@ var blackDog; // This is the best way to name variables with several words
 var 1girl;   
 var -girl;   
 ```
+
+Várias variáveis ​​em JavaScript também podem ser encadeadas, embora separadas por uma vírgula.
+
+```js
+var x, y, z;
+```
