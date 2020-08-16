@@ -60,3 +60,13 @@ var cup;
 var car;
 ```
 
+**Inicialização de variável:** geralmente ocorre quando uma variável é declarada. Aqui, a variável é atribuída a uma memória ou espaço pelo mecanismo JavaScript. Por isso, uma vez que uma variável é declarada, ela assume o valor `undefined` mesmo antes da atribuição.
+
+**Atribuição de variável:** a atribuição de variável é geralmente a etapa mais importante ao usar uma variável. Aqui, são atribuídos dados à variável que são um valor usando o operador de atribuição "=". Os valores em JavaScript usam um dos tipos de dados JavaScript padrão, que são:
+
+1. `String`
+2. `Number`
+3. `Boolean`
+4. `Null`
+5. `Undefined`
+6. `Estrutura de dados (Array e Objetos)`
