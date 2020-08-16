@@ -92,8 +92,6 @@ Precisamos seguir algumas regras para nomear variáveis em JavaScript, são elas
 
 **Exemplos de nomes de variáveis ​​são:**
 
-
-
 ```js
 // VALID
 var man;     
@@ -121,10 +119,11 @@ var a = 10,
   c   = 90;
 ```
 
-
 Variáveis ​​em JavaScript também podem realizar expressões matemáticas simples e assumir seu valor. Aqui:
 
 ```js
 var x = 5 + 10 + 2;
 console.log(x); // 17
 ```
+
+Após a primeira declaração de uma variável no escopo global, as declarações subsequentes de um nome de variável usando `var` são possíveis.
