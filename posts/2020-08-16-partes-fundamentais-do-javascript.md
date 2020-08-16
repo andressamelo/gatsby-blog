@@ -127,3 +127,14 @@ console.log(x); // 17
 ```
 
 Após a primeira declaração de uma variável no escopo global, as declarações subsequentes de um nome de variável usando `var` são possíveis.
+
+Exemplo:
+
+```js
+var age = 22;
+var age = 25;
+
+console.log(age) // 25
+```
+
+Agora vamos dar uma olhada nos outros tipos de variáveis, `let` e `const`.
