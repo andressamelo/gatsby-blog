@@ -39,4 +39,6 @@ var z;
 
 No código acima estamos declarando a variável x, a variável y e a variável z. 
 
-Observe que ainda não estamos atribuindo um valor a essas variáveis. Estamos apenas dizendo que eles deveriam existir. Se você fosse olhar para o valor de cada variável aqui, seria indefinido.
+Observe que ainda não estamos atribuindo nenhum valor a essas variáveis. Estamos apenas dizendo que eles deveriam existir. Se você fosse olhar para o valor de cada variável aqui, seria indefinido.
+
+### Declarando variáveis no ES2015
