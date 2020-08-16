@@ -110,3 +110,21 @@ Várias variáveis ​​em JavaScript também podem ser encadeadas, embora sepa
 ```js
 var x, y, z;
 ```
+
+Atribuição de valores:
+
+```js
+var x = 5, y = 6, z = 7;
+
+var a = 10,
+  b   = 30,
+  c   = 90;
+```
+
+
+Variáveis ​​em JavaScript também podem realizar expressões matemáticas simples e assumir seu valor. Aqui:
+
+```js
+var x = 5 + 10 + 2;
+console.log(x); // 17
+```
