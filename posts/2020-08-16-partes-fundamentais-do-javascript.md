@@ -222,3 +222,9 @@ Use `let` quando for mudar o valor da variável
 Use `const quando você tiver certeza de que aquela variável não será alterada
 
 Usar `let` e `const` manterá as variáveis ​​no escopo correto e tornará o código mais fácil de gerenciar.
+
+# Conclusão
+
+Neste post, entendemos como as variáveis ​​são declaradas em JavaScript e as diferenças entre os tipos de variáveis ​​- `var`, `let` e `const`.
+
+Esses tipos de variáveis ​​são únicos em sua própria maneira e servem para tornar o desenvolvimento de código eficiente, no entanto, é aconselhável usar `let` sempre que possível e `const` sempre que o valor da variável for permanecer constante.
