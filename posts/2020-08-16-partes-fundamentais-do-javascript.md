@@ -4,7 +4,7 @@ description: " Se você está aprendendo JavaScript, provavelmente já ouviu as
   pessoas dizerem como é importante aprender as partes fundamentais da
   linguagem.."
 date: 2020-08-16 12:03:58
-image: assets/img/desert.jpg
+image: assets/img/javascript.png
 category: js
 background: "#D6BA32"
 ---
