@@ -60,3 +60,171 @@ var cup;
 var car;
 ```
 
+**Inicialização de variável:** geralmente ocorre quando uma variável é declarada. Aqui, a variável é atribuída a uma memória ou espaço pelo mecanismo JavaScript. Por isso, uma vez que uma variável é declarada, ela assume o valor `undefined` mesmo antes da atribuição.
+
+**Atribuição de variável:** a atribuição de variável é geralmente a etapa mais importante ao usar uma variável. Aqui, são atribuídos dados à variável que são um valor usando o operador "=". Os valores em JavaScript usam um dos tipos de dados JavaScript padrão, que são:
+
+1. `String`
+2. `Number`
+3. `Boolean`
+4. `Null`
+5. `Undefined`
+6. `Estrutura de dados (Array e Objetos)`
+
+```js
+var x         = 5;             // Number
+var name      = "Chris";       // String
+var developer = true | false;  // Boolean
+var location  = null;          // Null
+var blue;                      // undefined
+```
+
+A sintaxe para atribuição de tipos de dados pode ser vista acima, podemos usar aspas simples ou duplas para atribuir strings. Além disso, os valores booleanos são verdadeiros ou falsos.
+
+## Nomeando variáveis
+
+Precisamos seguir algumas regras para nomear variáveis em JavaScript, são elas:
+
+* Os nomes devem começar com string minúsculas.
+* Os nomes não podem conter símbolos ou começar com símbolos.
+* Os nomes não podem começar com um número.
+* Os nomes podem conter uma mistura de strings maiúsculas, strings minúsculas e números.
+
+**Exemplos de nomes de variáveis ​​são:**
+
+```js
+// VALID
+var man;     
+var woman3;  
+var blackDog; // This is the best way to name variables with several words
+
+// INVALID
+var 1girl;   
+var -girl;   
+```
+
+Várias variáveis ​​em JavaScript também podem ser encadeadas, embora separadas por uma vírgula.
+
+```js
+var x, y, z;
+```
+
+Atribuição de valores:
+
+```js
+var x = 5, y = 6, z = 7;
+
+var a = 10,
+  b   = 30,
+  c   = 90;
+```
+
+Variáveis ​​em JavaScript também podem realizar expressões matemáticas simples e assumir seu valor. Aqui:
+
+```js
+var x = 5 + 10 + 2;
+console.log(x); // 17
+```
+
+Após a primeira declaração de uma variável no escopo global, as declarações subsequentes de um nome de variável usando `var` são possíveis.
+
+Exemplo:
+
+```js
+var age = 22;
+var age = 25;
+
+console.log(age) // 25
+```
+
+Agora vamos dar uma olhada nos outros tipos de variáveis, `let` e `const`.
+
+# Let
+
+Introduzido no ES2015 (também conhecido como ES6), o tipo de variável `let` compartilha muitas semelhanças com `var`, mas ao contrário de var tem restrições de escopo. `let` **é restrito a qualquer escopo em que seja declarado.** Sua declaração e atribuição são semelhantes a `var`. `let` foi introduzido para mitigar os problemas apresentados pelo escopo das variáveis ​​que os desenvolvedores enfrentam durante o desenvolvimento.
+
+Resumindo, `let` nos ajuda tornando mais fácil ver onde as variáveis ​​residem em nosso código.
+
+Ao declarar variáveis ​​com `let`:
+
+```js
+let x;
+let x = 5;
+```
+
+Múltiplas declarações também podem ser feitas com let:
+
+```js
+let x, y, z;
+let x = 50, y = 20, z = 3;
+```
+
+Ao contrário de `var`, quando usa-se `let`, as variáveis ​​não podem ser declaradas novamente. Tentar fazer isso gerará um erro de sintaxe: *O identificador já foi declarado.*
+
+```js
+let x = 20;
+let x = 50;
+
+console.log(x); // SyntaxError: identifier "x" has already been declared.
+```
+
+Essa modificação em var ajuda muito a fornecer um nível de organização enquanto gerencia grandes estruturas de dados, pois é mais seguro saber que sua variável não pode ser reatribuída em nenhum lugar em seu escopo.
+
+# Const
+
+Também introduzido no ES2015, `const` é um tipo de variável (não realmente, mas você descobrirá agora) atribuído a dados cujo valor **não pode e não será** alterado em todo o script. Agora, isso é mais rígido. `const` também está limitado ao escopo em que opera. `const` é declarado como `var` e `let`.
+
+Use const quando tiver certeza de que uma variável não será declarada novamente.
+
+```js
+const x = 20; 
+const y = 'boy';
+const z = 'developer';
+```
+
+Nota: Uma variável declarada com  **const**  DEVE ser inicializada.
+
+```js
+const x; // SyntaxError: missing initializer
+```
+
+Assim como var e let, as variáveis ​​declaradas com const também podem ser encadeadas com vírgulas separando cada variável:
+
+```js
+const x = 20, y = 50, man = true;
+```
+
+Para nomes de variáveis ​​diferentes, esses tipos de variáveis ​​podem ser usados ​​juntos, dependendo do processo de desenvolvimento.
+
+Alterando const
+
+Não é permitido alterar o valor de uma variável declarada com const.
+
+```js
+const name = 'chris';
+
+name = 'john'; // Uncaught TypeError: Assignment to constant variable.
+```
+
+No entanto, se você declarar um objeto como const, poderá alterar as propriedades.
+
+```js
+const person = {};
+
+person.name = 'chris'; // no error
+```
+
+# Qual Usar
+
+Ao declarar variáveis, é uma boa prática evitar o uso de var. Tente optar por let ou const com base nas seguintes regras:
+
+Use `let` quando for mudar o valor da variável
+Use `const quando você tiver certeza de que aquela variável não será alterada
+
+Usar `let` e `const` manterá as variáveis ​​no escopo correto e tornará o código mais fácil de gerenciar.
+
+# Conclusão
+
+Neste post, entendemos como as variáveis ​​são declaradas em JavaScript e as diferenças entre os tipos de variáveis ​​- `var`, `let` e `const`.
+
+Esses tipos de variáveis ​​são únicos em sua própria maneira e servem para tornar o desenvolvimento de código eficiente, no entanto, é aconselhável usar `let` sempre que possível e `const` sempre que o valor da variável for permanecer constante.
