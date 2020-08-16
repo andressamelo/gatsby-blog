@@ -29,8 +29,6 @@ Este pode parecer um tópico simples, mas existem nuances sutis na criação de 
 
 Variáveis ​​em JavaScript são contêineres que contêm dados reutilizáveis. Eles são como xícaras cheias de coisas, e essas coisas podem ser usadas repetidamente, dependendo da maneira que escolhermos. Antes do ES2015, as variáveis ​​JavaScript eram declaradas exclusivamente usando a palavra-chave var.
 
-
-
 ```js
 var x;
 var y;
@@ -46,3 +44,19 @@ Observe que ainda não estamos atribuindo nenhum valor a essas variáveis. Estam
 ES2015 é a versão atualizada do JavaScript (ou ECMAScript). O termo conhecido e mais flexível para ES2015 é ES6.
 
 No ES2015, duas outras formas de declarar variáveis ​​foram introduzidas. Eles são let e const. Discutiremos esses tipos em partes posteriores desta lição.
+
+## Usando variáveis
+
+Variáveis ​​são como contêineres em JavaScript. Usar variáveis ​​para armazenar dados é a base da linguagem e é feito em três partes distintas.
+
+**1. Declaração de variável:** aqui a variável é registrada em seu escopo correspondente, o escopo de uma variável é simplesmente "onde a variável pode ser usada." Falaremos mais sobre o escopo na próxima lição.
+
+\
+Alguns exemplos de declarações de variáveis:
+
+```js
+var x;
+var cup;
+var car;
+```
+
