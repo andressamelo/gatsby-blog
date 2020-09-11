@@ -11,10 +11,6 @@ export const ProfileWrapper = styled.section`
   width: 100%;
   border-bottom: 1px solid #dedede;
   text-align: center;
-  
-  ${media.lessThan("large")`
-    padding: 2rem;
-  `}
 `
 export const ProfileColumn = styled.div`
   display: flex;

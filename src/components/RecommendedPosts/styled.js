@@ -2,15 +2,13 @@ import styled from "styled-components"
 import AniLink from "gatsby-plugin-transition-link/AniLink"
 
 export const RecommendedWrapper = styled.section`
-  border-bottom: 1px solid var(--borders);
-  border-top: 1px solid var(--borders);
-  background: var(--mediumBackground);
+  background: transparent;
   display: flex;
 `
 
 export const RecommendedLink = styled(AniLink)`
   align-items: center;
-  background: var(--mediumBackground);
+  background: transparent;
   color: var(--highlight);
   display: flex;
   padding: 3rem;
@@ -18,10 +16,10 @@ export const RecommendedLink = styled(AniLink)`
   transition: background 0.5s;
   width: 50%;
   &:hover {
-    background: var(--borders);
+    text-decoration: underline;
   }
   &.previous {
-    border-right: 1px solid var(--borders);
+    border-right: 1px dotted var(--borders);
   }
   &.next {
     justify-content: flex-end;
@@ -33,5 +31,6 @@ export const RecommendedLink = styled(AniLink)`
   &.next:after {
     content: "\\2192";
     margin-left: 0.5rem;
+    border: 1px solid red;
   }
 `

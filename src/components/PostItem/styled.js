@@ -33,12 +33,16 @@ export const PostItemWrapper = styled.section`
 `
 
 export const PostItemTag = styled.div`
-  color: ${props =>
+  background: ${props =>
     props.background ? props.background : "var(--highlight)"};
   font-size: .8rem;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   margin-bottom: 0.5rem;
+  padding: 0.2rem 0.4rem 0.1rem;
+  width: auto;
+  color: #FFF;
+  margin: 0 auto;
 `
 
 export const PostItemInfo = styled.div`
