@@ -164,6 +164,7 @@ export const MainContent = styled.section`
     border-bottom: 1px dashed var(--highlight);
     color: var(--highlight);
     text-decoration: none;
+    font-weight: 600;
     transition: opacity 0.5s;
     svg {
       color: var(--postColor);

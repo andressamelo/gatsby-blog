@@ -36,10 +36,11 @@ export const MenuBarItem = styled.span`
   width: 2.8rem;
 
   &.light {
-    color: #d4d400;
+    color: var(--highlight);
+    margin-top: -5px;
 
     &:hover {
-      color: #e2e240;
+      color: #F8668A;
     }
   }
 
@@ -54,11 +55,13 @@ export const MenuName = styled(AniLink)`
   &:focus, &:hover, &:visited, &:link, &:active {
       text-decoration: none;
   }
-  color: var(--postColor);
+  color: #FFF;
+  background-color: #EE2E5D;
   cursor: pointer;
   display: block;
   position: relative;
   font-size: 1rem;
-  font-weight: 700;
+  padding: 0.2rem;
+  font-weight: 500;
   letter-spacing: 0.05rem;
 `

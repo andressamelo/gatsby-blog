@@ -54,7 +54,7 @@ module.exports = {
         short_name: `Andressa Melo`,
         start_url: `/`,
         background_color: `#ffffff`,
-        theme_color: `#e6c800`,
+        theme_color: `#EE2E5D`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`,
       },
