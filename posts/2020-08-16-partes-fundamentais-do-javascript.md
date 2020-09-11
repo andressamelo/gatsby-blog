@@ -2,7 +2,7 @@
 title: Partes fundamentais do JavaScript
 description: " Se você está aprendendo JavaScript, provavelmente já ouviu as
   pessoas dizerem como é importante aprender as partes fundamentais da
-  linguagem.."
+  linguagem."
 date: 2020-08-16 12:03:58
 image: assets/img/javascript.png
 category: js
@@ -23,11 +23,11 @@ Definir dados e, em seguida, manipulá-los sempre foi a base da programação. O
 
 Onde as variáveis ​​podem ser alteradas, as constantes permanecem as mesmas. Neste artigo, discutiremos as várias maneiras de criar variáveis ​​em JavaScript.
 
-Este pode parecer um tópico simples, mas existem nuances sutis na criação de variáveis ​​em JavaScript que é importante saber.
+Este pode parecer um tópico simples, mas existem detalhes sutis na criação de variáveis ​​em JavaScript que é importante saber.
 
 ### O que são variáveis?
 
-Variáveis ​​em JavaScript são contêineres que contêm dados reutilizáveis. Eles são como xícaras cheias de coisas, e essas coisas podem ser usadas repetidamente, dependendo da maneira que escolhermos. Antes do ES2015, as variáveis ​​JavaScript eram declaradas exclusivamente usando a palavra-chave var.
+Variáveis ​​em JavaScript são contêineres que contêm dados reutilizáveis. Eles são como xícaras cheias de coisas, e essas coisas podem ser usadas repetidamente, dependendo da maneira que escolhermos. Antes do ES2015, as variáveis ​​JavaScript eram declaradas exclusivamente usando a palavra-chave `var`.
 
 ```js
 var x;
@@ -43,7 +43,7 @@ Observe que ainda não estamos atribuindo nenhum valor a essas variáveis. Estam
 
 ES2015 é a versão atualizada do JavaScript (ou ECMAScript). O termo conhecido e mais flexível para ES2015 é ES6.
 
-No ES2015, duas outras formas de declarar variáveis ​​foram introduzidas. Eles são let e const. Discutiremos esses tipos em partes posteriores desta lição.
+No ES2015, duas outras formas de declarar variáveis ​​foram introduzidas. Eles são `let` e `const`. Discutiremos esses tipos em partes posteriores desta lição.
 
 ## Usando variáveis
 
@@ -168,13 +168,13 @@ let x = 50;
 console.log(x); // SyntaxError: identifier "x" has already been declared.
 ```
 
-Essa modificação em var ajuda muito a fornecer um nível de organização enquanto gerencia grandes estruturas de dados, pois é mais seguro saber que sua variável não pode ser reatribuída em nenhum lugar em seu escopo.
+Essa modificação em `var` ajuda muito a fornecer um nível de organização **enquanto gerencia grandes estruturas de dados**, pois é mais seguro saber que sua variável não pode ser reatribuída em nenhum lugar em seu escopo.
 
 # Const
 
 Também introduzido no ES2015, `const` é um tipo de variável (não realmente, mas você descobrirá agora) atribuído a dados cujo valor **não pode e não será** alterado em todo o script. Agora, isso é mais rígido. `const` também está limitado ao escopo em que opera. `const` é declarado como `var` e `let`.
 
-Use const quando tiver certeza de que uma variável não será declarada novamente.
+**Use const quando tiver certeza de que uma variável não será declarada novamente.**
 
 ```js
 const x = 20; 
@@ -188,7 +188,7 @@ Nota: Uma variável declarada com  **const**  DEVE ser inicializada.
 const x; // SyntaxError: missing initializer
 ```
 
-Assim como var e let, as variáveis ​​declaradas com const também podem ser encadeadas com vírgulas separando cada variável:
+Assim como `var` e `let`, as variáveis ​​declaradas com const também podem ser encadeadas com vírgulas separando cada variável:
 
 ```js
 const x = 20, y = 50, man = true;
@@ -196,9 +196,9 @@ const x = 20, y = 50, man = true;
 
 Para nomes de variáveis ​​diferentes, esses tipos de variáveis ​​podem ser usados ​​juntos, dependendo do processo de desenvolvimento.
 
-Alterando const
+## **Alterando const**
 
-Não é permitido alterar o valor de uma variável declarada com const.
+**Não** é permitido alterar o valor de uma variável declarada com const.
 
 ```js
 const name = 'chris';
@@ -219,7 +219,7 @@ person.name = 'chris'; // no error
 Ao declarar variáveis, é uma boa prática evitar o uso de var. Tente optar por let ou const com base nas seguintes regras:
 
 Use `let` quando for mudar o valor da variável
-Use `const quando você tiver certeza de que aquela variável não será alterada
+Use `const` quando você tiver certeza de que aquela variável não será alterada
 
 Usar `let` e `const` manterá as variáveis ​​no escopo correto e tornará o código mais fácil de gerenciar.
 
