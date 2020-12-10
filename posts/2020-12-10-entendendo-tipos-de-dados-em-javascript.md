@@ -23,8 +23,6 @@ Com linguagens digitadas dinamicamente, uma variável com o mesmo nome pode ser 
 \
 Por exemplo, a variável `t`, definida como uma variável pela palavra-chave `let` (observe que `let` mantém uma determinada variável limitada em escopo), pode ser atribuída para conter diferentes tipos de dados ou pode ser inicializada, mas ser indefinida:
 
-
-
 ```javascript
 let t = 16;         // t is a number
 let t = "Teresa";   // t is a string
