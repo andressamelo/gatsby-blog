@@ -98,10 +98,11 @@ No exemplo acima, como a string `"5"` pode ser avaliada como um valor numérico 
 
 Ao atribuir o valor `NaN` a uma variável usada em uma operação, resultará no valor de NaN, mesmo quando o outro operando for um número legal:
 
+```javascript
 let a = NaN;
 let b = 37;
 let c = a + b;  // c will be NaN
-
-```javascript
-Existe apenas um tipo de dados numérico em JavaScript. Ao trabalhar com números, qualquer número inserido será interpretado como esse tipo de dado; você não é obrigado a declarar que tipo de tipo de dado está inserindo porque o JavaScript é declara dinamicamente.
 ```
+
+Existe apenas um tipo de dados numérico em JavaScript. Ao trabalhar com números, qualquer número inserido será interpretado como esse tipo de dado; você não é obrigado a declarar que tipo de tipo de dado está inserindo porque o JavaScript é declara dinamicamente.
+
