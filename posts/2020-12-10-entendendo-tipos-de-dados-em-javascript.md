@@ -106,6 +106,8 @@ let c = a + b;  // c will be NaN
 
 Existe apenas um tipo de dados numérico em JavaScript. Ao trabalhar com números, qualquer número inserido será interpretado como esse tipo de dado; você não é obrigado a declarar que tipo de tipo de dado está inserindo porque o JavaScript é declara dinamicamente.
 
+
+
 ## Strings
 
 Uma string é uma sequência de um ou mais caracteres (letras, números, símbolos). Strings são úteis porque representam dados textuais.
