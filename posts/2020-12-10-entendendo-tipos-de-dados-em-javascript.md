@@ -106,3 +106,69 @@ let c = a + b;  // c will be NaN
 
 Existe apenas um tipo de dados numérico em JavaScript. Ao trabalhar com números, qualquer número inserido será interpretado como esse tipo de dado; você não é obrigado a declarar que tipo de tipo de dado está inserindo porque o JavaScript é declara dinamicamente.
 
+## Strings
+
+Uma string é uma sequência de um ou mais caracteres (letras, números, símbolos). Strings são úteis porque representam dados textuais.
+
+No JavaScript, as strings existem entre aspas simples ou aspas duplas ", portanto, para criar uma string, coloque uma sequência de caracteres entre aspas:
+
+```javascript
+let singleQuotes = 'Esta é uma string entre aspas simples.';
+```
+
+```javascript
+let doubleQuotes = "Esta é uma string entre aspas duplas.";
+```
+
+Você pode optar por usar aspas simples ou duplas, mas o que decidir sobre você deve permanecer consistente dentro de um programa.
+
+O programa “Hello, World!” demonstra como uma string pode ser usada em programação de computador, como os caracteres que compõem a frase Hello, World! no alerta () abaixo há uma string.
+
+```html
+<!DOCTYPE HTML>
+<html>
+<head>
+<script>
+function helloFunction() {
+    alert("Hello, World!");
+}
+</script>
+</head>
+<body>
+<p><button onclick="helloFunction()">Click me</button></p>
+</body>
+</html>
+```
+
+Quando executamos o código e clicamos no botão Click me, receberemos um pop-up com o seguinte resultado:
+
+```javascript
+Output
+Hello, World!
+```
+
+Tal como acontece com outros tipos de dados, podemos armazenar strings em variáveis:
+
+```javascript
+let hw = "Hello, World!";
+```
+
+E exiba a string no alert () chamando a variável:
+
+```html
+...
+<script>
+let hw = "Hello, World!";
+function helloFunction() {
+    alert(hw);
+}
+</script>
+...
+```
+
+```javascript
+Output
+Hello, World!
+```
+
+Existem muitas operações que podemos realizar em strings dentro de nossos programas, a fim de manipulá-los para alcançar os resultados que buscamos. Strings são importantes para comunicar informações ao usuário e para o usuário comunicar as informações de volta ao programa.
