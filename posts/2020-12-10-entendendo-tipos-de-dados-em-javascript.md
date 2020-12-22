@@ -106,8 +106,6 @@ let c = a + b;  // c will be NaN
 
 Existe apenas um tipo de dados numérico em JavaScript. Ao trabalhar com números, qualquer número inserido será interpretado como esse tipo de dado; você não é obrigado a declarar que tipo de tipo de dado está inserindo porque o JavaScript é declara dinamicamente.
 
-
-
 ## Strings
 
 Uma string é uma sequência de um ou mais caracteres (letras, números, símbolos). Strings são úteis porque representam dados textuais.
@@ -174,3 +172,118 @@ Hello, World!
 ```
 
 Existem muitas operações que podemos realizar em strings dentro de nossos programas, a fim de manipulá-los para alcançar os resultados que buscamos. Strings são importantes para comunicar informações ao usuário e para o usuário comunicar as informações de volta ao programa.
+
+## Booleanos
+
+O tipo de dados booleano pode ser um de dois valores, **verdadeiro** ou **falso**. Os booleanos são usados para representar os valores verdade que estão associados ao ramo lógico da matemática, que informa algoritmos em ciência da computação. \
+\
+Sempre que você vir o tipo de dados Boolean, ele começará com um **B** maiúsculo porque seu nome é uma homenagem ao matemático George Boole.
+
+Muitas operações matemáticas nos dão respostas que podem ser avaliadas como verdadeiras ou falsas:\
+
+* **Maior que**
+  500 > 100 verdadeiro
+  1 > 5 falso
+* **Menor que**
+  200 < 400 verdadeiro
+  4 < 2 falso
+* **Igual**
+  5 = 5 verdadeiro
+  500 = 400 falso
+
+Como com outros tipos de dados, podemos armazenar um valor booleano em uma variável:
+
+```javascript
+let myBool = 5 > 8; // falso
+```
+
+Como 5 não é maior que 8, a variável `myBool` tem o valor `false`.
+
+À medida que você escreve mais programas em JavaScript, fica mais familiarizado com o funcionamento dos booleanos e como diferentes funções e operações avaliadas como verdadeiras ou falsas podem alterar o curso do programa.
+
+## Arrays
+
+Um array (ou uma matriz) pode conter vários valores em uma única variável. Isso significa que você pode conter uma lista de valores em um array e iterar por meio deles.
+
+Cada item ou valor que está dentro de um array é chamado de elemento. Você pode se referir aos elementos de um array usando um número de índice.
+
+Assim como as strings são definidas como caracteres entre aspas, os arrays são definidos com valores entre colchetes \[  ].
+
+Um array de strings, por exemplo, tem a seguinte aparência:
+
+```javascript
+let fish = \["shark", "cuttlefish", "clownfish", "eel"];
+```
+
+Se chamarmos a variável fish, receberemos a seguinte saída:
+
+```javascript
+["shark", "cuttlefish", "clownfish", "eel"]
+```
+
+Os arrays são um tipo de dados muito flexível porque são mutáveis no sentido de que podem ter valores de elemento adicionados, removidos e alterados.
+
+## Objetos
+
+O tipo de dados do **objeto** JavaScript pode conter muitos valores como pares **nome: valor**. Esses pares fornecem uma maneira útil de armazenar e acessar dados. A sintaxe literal do objeto é composta de pares nome: valor separados por dois pontos com chaves em cada lado `{}`.
+
+Normalmente usado para conter dados relacionados, como as informações contidas em um ID, um literal de objeto JavaScript se parece com isto, com espaços em branco entre as propriedades:
+
+```javascript
+let sammy = {firstName:"Sammy", lastName:"Shark", color:"blue", location:"ocean"};
+```
+
+Como alternativa, e especialmente para literais de objeto com um grande número de pares nome: valor, podemos escrever este tipo de dados em várias linhas, com um espaço em branco após cada dois-pontos:
+
+```javascript
+let sammy = {
+    firstName: "Sammy",
+    lastName: "Shark",
+    color: "blue",
+    location: "Ocean"
+};
+```
+
+A variável de objeto `sammy` em cada um dos exemplos acima tem 4 propriedades: `firstName`, `lastName`, `color` e `location`. Esses são os valores passados separados por dois pontos.
+
+## Trabalhando com vários tipos de dados
+
+Embora cada programa que você criar contenha vários tipos de dados, é importante ter em mente que geralmente você executará operações no mesmo tipo de dados. Ou seja, você fará matemática com números ou fatiará strings.
+
+Ao usar um operador que funciona em tipos de dados, como o operador `+` que pode adicionar números ou concatenar strings, você pode obter resultados inesperados.
+
+Por exemplo, ao usar o operador `+` com números e strings juntos, os números serão tratados como uma string (portanto, eles serão concatenados), mas a ordem dos tipos de dados influenciará a concatenação.
+
+Portanto, se você criar uma variável que execute a seguinte concatenação, o JavaScript interpretará cada elemento abaixo como uma string:
+
+```javascript
+let o = "Ocean" + 5 + 3;
+```
+
+Se você chamar a variável `o`, obterá o seguinte valor retornado:
+
+```javascript
+Output
+Ocean53
+```
+
+No entanto, se você começar com números, os dois números serão adicionados antes de serem interpretados como uma string quando o tempo de execução do programa atingir "Oceano", então o valor retornado será a soma dos dois números concatenados com a string:
+
+```javascript
+let p = 5 + 3 + "Ocean";
+```
+
+```javascript
+Output
+8Ocean
+```
+
+Devido a esses resultados inesperados, você provavelmente executará operações e métodos dentro de um tipo de dados, em vez de entre eles. JavaScript, entretanto, não retorna erros ao misturar tipos de dados, como fazem algumas outras linguagens de programação.
+
+
+## Conclusão
+
+Neste ponto, você deve ter um melhor entendimento de alguns dos principais tipos de dados disponíveis para uso em JavaScript.
+
+Cada um desses tipos de dados se tornará importante conforme você desenvolve projetos de programação na linguagem JavaScript.
+
