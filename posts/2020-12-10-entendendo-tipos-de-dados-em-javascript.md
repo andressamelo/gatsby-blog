@@ -9,23 +9,26 @@ image: assets/img/javascript.png
 category: js
 background: "#D6BA32"
 ---
+*Assim como o [post anterior](https://www.andressamelo.com.br/partes-fundamentais-do-javascript/), este post faz parte [desta thread](https://twitter.com/Madisonkanna/status/1274424134139666432?s=19) sobre os fundamentos do JavaScript, o conteúdo original pode ser acessado [aqui](https://www.digitalocean.com/community/tutorials/understanding-data-types-in-javascript).*
+
+\
 Isso é importante porque o tipo de dado específico que você usa determinará quais valores você pode atribuir a ele e o que você pode fazer com ele. Ou seja, para poder fazer operações com variáveis ​​em JavaScript, é importante entender o tipo de dados de qualquer variável.\
 \
-Neste tutorial, examinaremos como os tipos de dados funcionam em JavaScript, bem como os tipos de dados nativos importantes para a linguagem. Esta não é uma investigação exaustiva dos tipos de dados, mas o ajudará a se familiarizar com as opções disponíveis em JavaScript.
+Neste material, examinaremos como os tipos de dados funcionam em JavaScript, bem como os tipos de dados nativos importantes para a linguagem. Esta não é uma investigação exaustiva dos tipos de dados, mas o ajudará a se familiarizar com as opções disponíveis em JavaScript.
 
-## Dynamic Typing
+## Tipos Dinâmicos
 
 JavaScript tem tipos de dados dinâmicos, ou seja, a verificação do tipo é feita em tempo de execução, em vez de tempo de compilação. Os tipos de dados do Python também são digitados dinamicamente. \
 \
 Com linguagens digitadas dinamicamente, uma variável com o mesmo nome pode ser usada para conter diferentes tipos de dados. \
 \
-Por exemplo, a variável `t`, definida como uma variável pela palavra-chave `let` (observe que `let` mantém uma determinada variável limitada em escopo), pode ser atribuída para conter diferentes tipos de dados ou pode ser inicializada, mas ser indefinida:
+Por exemplo, a variável `t`, definida como uma variável pela palavra-chave `let` (observe que `let` mantém uma determinada variável limitada em escopo), pode ser atribuída para conter diferentes tipos de dados ou pode ser inicializada, mas deixando indefinida:
 
 ```javascript
-let t = 16;         // t is a number
-let t = "Teresa";   // t is a string
-let t = true;       // t is a Boolean
-let t;              // t is undefined
+let t = 16;         // t é um número
+let t = "Teresa";   // t é uma string
+let t = true;       // t é um boleano
+let t;              // t é indefinida
 ```
 
 Cada uma das variáveis `t` acima pode ser definida para qualquer tipo de dados disponível em JavaScript; eles não precisam ser declarados explicitamente com um tipo de dados antes de serem usados.
@@ -280,10 +283,8 @@ Output
 
 Devido a esses resultados inesperados, você provavelmente executará operações e métodos dentro de um tipo de dados, em vez de entre eles. JavaScript, entretanto, não retorna erros ao misturar tipos de dados, como fazem algumas outras linguagens de programação.
 
-
 ## Conclusão
 
 Neste ponto, você deve ter um melhor entendimento de alguns dos principais tipos de dados disponíveis para uso em JavaScript.
 
 Cada um desses tipos de dados se tornará importante conforme você desenvolve projetos de programação na linguagem JavaScript.
-
