@@ -37,7 +37,6 @@ export const MenuBarItem = styled.span`
 
   &.light {
     color: var(--highlight);
-    margin-top: -5px;
 
     &:hover {
       color: #F8668A;

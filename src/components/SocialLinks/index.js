@@ -24,9 +24,6 @@ const SocialLinks = () => (
                     </S.SocialLinksItem>
                 )
             })}
-            <S.SocialTitle>
-                or send me an email.
-            </S.SocialTitle>
         </S.SocialLinksList>
     </S.SocialLinksWrapper>
 
