@@ -1,4 +1,4 @@
-# Andressa Melo - Personal website e Blog
+# Andressa Melo - Personal website
 
 - [To access](https://www.andressamelo.com.br)
 

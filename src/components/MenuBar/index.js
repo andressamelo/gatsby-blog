@@ -47,18 +47,10 @@ const MenuBar = () => {
                 </S.MenuBarLink>
             </S.MenuBarGroup>
             <S.MenuBarGroup>
-                <S.MenuBarLink cover direction="right" bg={getThemeColor()} duration={0.6} to="/search/" title="Pesquisar">
-                    <S.MenuBarItem><Search /></S.MenuBarItem>
-                </S.MenuBarLink>
                 <S.MenuBarItem title="Mudar o tema" onClick={() => {
                     window.__setPreferredTheme(isDarkMode ? 'light' : 'dark')
                 }} className={theme} >
                     <Light />
-                </S.MenuBarItem>
-                <S.MenuBarItem title="Mudar visualização" onClick={() => {
-                    window.__setPreferredDisplay(isListMode ? 'grid' : 'list')
-                }}>
-                 {isListMode ? <Grid /> : <List />}
                 </S.MenuBarItem>
             </S.MenuBarGroup>
         </S.MenuBarWrapper>        

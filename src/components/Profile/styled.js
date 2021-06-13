@@ -9,7 +9,6 @@ export const ProfileWrapper = styled.section`
   justify-content: space-between;
   padding: 5rem;
   width: 100%;
-  border-bottom: 1px solid #dedede;
   text-align: center;
 `
 export const ProfileColumn = styled.div`
