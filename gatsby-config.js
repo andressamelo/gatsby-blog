@@ -4,9 +4,9 @@ const queries = require("./src/utils/algolia")
 
 module.exports = {
   siteMetadata: {
-    title: `Hello!`,
+    title: `Hello! 🖖`,
     author: `Andressa Melo`,
-    description: `My name is Andressa Melo and I'm a Front-end developer. I've been creating functional projects, agile, with semantic codification, up-to-date and clean.`,
+    description: `My name is Andressa Melo and I'm a Frontend Software Engineer. I've been creating functional projects, agile, with semantic codification, up-to-date and clean.`,
     siteUrl: `https://andressamelo-blog.netlify.com`,
   },
   plugins: [
